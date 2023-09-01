@@ -1,0 +1,171 @@
+/* Estilos generales */
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(217deg, #a7a5a6, rgba(255, 0, 0, 0) 70.71%),
+              linear-gradient(127deg, #88888a, rgba(0, 255, 0, 0) 70.71%),
+              linear-gradient(336deg, #595a5b, rgba(0, 0, 255, 0) 70.71%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.txt-wrapper {
+  margin: 1rem;
+  position: relative;
+}
+
+.pairOfBtns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+textarea {
+  border: none;
+  width: 21rem;
+  padding: 2rem;
+  height: 21rem;
+  margin: 0 1rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  resize: none;
+  position: relative;
+}
+
+textarea:hover,
+textarea:focus {
+  outline: none;
+  border-color: #7eb2e9;
+  box-shadow: 0 0 1rem #719ECE;
+}
+
+.btnclss {
+  width: 10rem;
+  height: 3rem;
+  margin: 1rem;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 2rem;
+  background-color: white;
+  border: solid 3px white;
+  user-select: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  color: black;
+}
+
+.btnclss:hover {
+  transform: scale(1.1);
+}
+
+.output-container {
+  position: relative;
+}
+
+.clear-icon {
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+  padding: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+  display: none;
+}
+
+.toCopy {
+  display: none;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Media queries */
+
+@media only screen and (max-width: 600px) {
+  textarea {
+      width: 90%;
+      height: 10rem;
+  }
+
+  .pairOfBtns {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .btnclss {
+      width: 80%;
+  }
+}
+.clear-icon {
+  position: absolute;
+  bottom: 25px;
+  left: 10px;
+  font-size: 16px;
+  color: black;
+  cursor: pointer;
+  padding: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: black;
+  display: none;
+}
+.black-icon {
+  color: black;
+}
+
+.txt-wrapper:hover .clear-icon {
+  display: block;
+}
+
+#outputText:empty + #noTextImage {
+  display: block;
+}
+
+#noTextImage {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
