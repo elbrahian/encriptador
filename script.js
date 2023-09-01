@@ -31,6 +31,15 @@ document.addEventListener("DOMContentLoaded", function () {
         noTextImage.style.display = "none";
     }
 });
+outputText.addEventListener("input", function () {
+  const noTextImage = document.getElementById("noTextImage");
+  if (outputText.value.trim() === "") {
+      noTextImage.style.display = "block"; 
+  } else {
+      noTextImage.style.display = "none"; 
+  }
+});
+
 
   copyButton.addEventListener("click", function () {
     outputText.select();
