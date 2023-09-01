@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="logo.svg" />
     <title>Encriptador / Desencriptador</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <img src="logo.svg" alt="Logo" class="logo">
     <div class="container">
         <div class="txt-wrapper">
+            
             <textarea id="inputText" placeholder="Ingrese el texto"></textarea>
             <div class="pairOfBtns">
                 <button id="encryptButton" class="btnclss">Encriptar</button>
@@ -18,9 +21,11 @@
         </div>
         <div class="txt-wrapper">
             <textarea id="outputText" placeholder="Resultado encriptado/desencriptado"></textarea>
+            <img id="noTextImage" src="logo.svg" alt="Imagen oculta" class="hidden-image">
             <button id="clearButton" class="clear-icon"><i class="fas fa-trash-alt black-icon"></i></button>
-            <button id="copyButton" class="btnclss">Copiar</button>
-          
+            <div class="pairOfBtns">    
+                <button id="copyButton" class="btnclss">Copiar</button>  
+            </div>
         </div>
     </div>
     <footer>
