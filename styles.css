@@ -70,7 +70,7 @@ textarea:focus {
   font-weight: bold;
   border-radius: 2rem;
   background-color: white;
-  border: solid 3px white;
+  border: solid 3px #594F54;
   user-select: none;
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -134,8 +134,8 @@ footer {
 }
 .clear-icon {
   position: absolute;
-  bottom: 25px;
-  left: 10px;
+  bottom: 100px;
+  left: 15px;
   font-size: 16px;
   color: black;
   cursor: pointer;
@@ -155,11 +155,17 @@ footer {
   display: block;
 }
 
-#outputText:empty + #noTextImage {
-  display: block;
+.logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 20px;
+  width: 150px; 
+  height: 150px; 
+  z-index: 1000; 
 }
 
-#noTextImage {
+.hidden-image {
   display: none;
   position: absolute;
   bottom: 0;
